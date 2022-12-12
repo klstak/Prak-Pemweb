@@ -12,8 +12,8 @@
 <body>
     <div class="opsi">
         <form id="form_mahasiswa">
-            <label for="prodi">
-                <h3>Program Studi -></h3>
+            <label for="prodi" class="prodi">
+                <h3>Program Studi :</h3>
             </label>
             <select name="prodi" id="prodi">
                 <option value="" disabled="" selected=""> Pilih Program Studi </option>
