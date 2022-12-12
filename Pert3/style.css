@@ -189,7 +189,7 @@ h2 {
   color: #4070f4;
 }
 .content form{
-  width: 40%;
+  width: 50%;
   margin-right: 30px;
 }
 .content .input-box{
@@ -321,5 +321,5 @@ footer {
   }
   .content form{
     width: 100%;
-  }
+  } 
 }
