@@ -1,0 +1,325 @@
+/* Google Font Import Link */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  width: 100%;
+  padding: 20px;
+  transition: all 0.4s ease;
+}
+nav.sticky {
+  padding: 15px 20px;
+  background: #4070f4;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+nav .nav-content {
+  height: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo {
+  display: flex;
+  justify-content: space-between;
+}
+nav .logo .image img {
+  width: 40px;
+  border-radius: 6px;
+}
+nav .logo a {
+  font-weight: 500;
+  font-size: 35px;
+  color: #4070f4;
+  padding-left: 7px;
+}
+nav.sticky .logo a {
+  color: #fff;
+}
+.nav-content .nav-links {
+  display: flex;
+}
+.nav-content .nav-links li {
+  list-style: none;
+  margin: 0 8px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #0e2431;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 4px;
+  transition: all 0.3s ease;
+}
+.nav-links li a:hover {
+  color: #4070f4;
+}
+nav.sticky .nav-links li a {
+  color: #fff;
+  transition: all 0.4s ease;
+}
+nav.sticky .nav-links li a:hover {
+  color: #0e2431;
+}
+.home {
+  height: 100vh;
+  width: 100%;
+  background: url("images/background.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Ubuntu", sans-serif;
+}
+h2 {
+  font-size: 30px;
+  margin-bottom: 6px;
+  color: #4070f4;
+}
+.text {
+  text-align: justify;
+  padding: 40px 80px;
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+}
+.about {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: #ecf0f3;
+}
+.icons a {
+  background: #ecf0f3;
+  position: relative;
+  height: 60px;
+  width: 60px;
+  margin: 0 10px;
+  display: inline-flex;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: all 0.3s;
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+}
+.icons a:hover:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  background: #ecf0f3;
+  box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
+}
+.icons a i {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-size: 25px;
+  line-height: 60px;
+}
+.icons a:hover i {
+  transform: scale(0.9);
+}
+.icons a.fb i {
+  color: #4267b2;
+}
+.icons a.twitter i {
+  color: #1da1f2;
+}
+.icons a.insta i {
+  color: #e1306c;
+}
+.icons a.git i {
+  color: #333;
+}
+.icons a.yt i {
+  color: #ff0000;
+}
+.worktable {
+  display: flex;
+  justify-content: center;
+  padding: 0.1rem;
+}
+.table {
+  width: 50%;
+  border-collapse: collapse;
+}
+
+.table th {
+  background-color: #fae9fb;
+  padding: 0.2rem;
+  font-size: 1.1rem;
+  border: 1px solid #000000;
+}
+
+.table td {
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #000000;
+}
+.container{
+  z-index: 12;
+  max-width: 1050px;
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  margin: 0 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.container .content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 20px;
+}
+.content .topic{
+  font-size: 22px;
+  font-weight: 500;
+  color: #4070f4;
+}
+.content form{
+  width: 40%;
+  margin-right: 30px;
+}
+.content .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 16px 0;
+  position: relative;
+}
+.content .input-box input{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  padding-left: 16px;
+  background: #fae9fb;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.content .input-box input:focus,
+.content .input-box input:valid{
+  border-color: #4070f4;
+  background-color: #fff;
+}
+.content .input-box label{
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  color: #636c72;
+  font-size: 15px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+.content .input-box input:focus ~ label,
+.content .input-box input:valid ~ label{
+  top: 0;
+  left: 12px;
+  display: 14px;
+  color: #4070f4;
+  background: #fff;
+}
+.content .message-box{
+  min-height: 100px;
+  position: relative;
+}
+.content .message-box textarea{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  resize: none;
+  background: #fae9fb;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  outline: none;
+  transition all 0.3s ease;
+}
+.content .message-box textarea:focus{
+  border-color: #4070f4;
+  background-color: #fff;
+}
+.content .message-box label{
+  position: absolute;
+  font-size: 16px;
+  color: #636c72;
+  left: 18px;
+  top: 6px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.content .message-box textarea:focus ~ label{
+  left: 12px;
+  top: -10px;
+  color: #4070f4;
+  font-size: 14px;
+  background: #fff;
+}
+.content .input-box input[type="submit"]{
+  color: #fff;
+  background: #4070f4;
+  padding-left: 0;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+.content .input-box input[type="submit"]:hover{
+  background-color: #4070f4;
+}
+footer {
+  padding: 20px;
+  color: #fff;
+  background-color: #4070f4;
+  text-align: center;
+}
+@media screen and (max-width: 1000px) {
+  main #content,
+  main aside {
+    width: 100%;
+    padding: 0;
+  }
+  nav nav.content {
+    display: contents;
+  }
+  nav .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav .logo .image img {
+    width: 30px;
+  }
+  nav .logo a {
+    font-size: 20px;
+  }
+  nav .nav-links {
+    display: flex;
+    justify-content: center;
+  }
+  .nav-links li a {
+    font-size: 13px;
+    padding: 10px 0.1px;
+  }
+  .icons a {
+    height: 20px;
+    width: 20px;
+  }
+  .content form{
+    width: 100%;
+  }
+}
