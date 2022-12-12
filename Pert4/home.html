@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <!--<title>Dashboard Sidebar Menu</title>-->
+</head>
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="https://res.cloudinary.com/direnafzc/image/upload/v1667022959/michael_fhopon.jpg"
+                        alt="klst4k">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">klst4k</span>
+                    <span class="profession">Computer Science</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="home.html">
+                            <i class='bx bx-home-alt icon'></i>
+                            <span class="text nav-text">About</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="experience.html">
+                            <i class='bx bx-bar-chart-alt-2 icon'></i>
+                            <span class="text nav-text">Experience</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="contact.html">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Contact</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="text">
+            <h2>About Me</h2>
+            <p>Hi, my name is Michael Pascalis Simanjuntak and I'm a Computer Science Student. I have a
+                certification in basic web development, and I have 1 years of experience working in web development. I'm
+                passionate about programming and a fullstack web developer, and in my free time, I enjoy video games and
+                listening to music. <br>
+                If you want to learn more about me or work with me, please don't hesitate to reach out. I would love
+                to connect and discuss how I can help you or your organization.</p>
+            <div class="icons">
+                <a href="https://www.facebook.com/m.gam1ng" target="_blank" class="fb"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/klstak" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="http://instagram.com/kl._stak" target="_blank" class="insta"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://github.com/klstak" target="_blank" class="git"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/@klstak6285/featured" target="_blank" class="yt"><i
+                        class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const body = document.querySelector('body'),
+            sidebar = body.querySelector('nav'),
+            toggle = body.querySelector(".toggle"),
+            modeSwitch = body.querySelector(".toggle-switch"),
+            modeText = body.querySelector(".mode-text");
+
+
+        toggle.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        })
+
+
+        modeSwitch.addEventListener("click", () => {
+            body.classList.toggle("dark");
+
+            if (body.classList.contains("dark")) {
+                modeText.innerText = "Light mode";
+            } else {
+                modeText.innerText = "Dark mode";
+
+            }
+        });
+    </script>
+
+</body>
+
+</html>
